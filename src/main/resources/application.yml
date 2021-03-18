@@ -1,5 +1,9 @@
-display:
-  mach: 3
-  unit:
-    name: "mph"
-    factor: 2.23694
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: ${POSTGRES_PASS}
+    password: ${POSTGRES_PASS}
+    jdbc:
+      url: ${JDBC_URL}
+  http:
+    port: 8080
