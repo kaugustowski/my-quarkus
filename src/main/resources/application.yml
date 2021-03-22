@@ -1,9 +1,9 @@
 quarkus:
   datasource:
     db-kind: postgresql
-    username: ${POSTGRES_PASS}
-    password: ${POSTGRES_PASS}
+    username: quarkus
+    password: quarkus
     jdbc:
-      url: ${JDBC_URL}
+      url: jdbc:postgresql://localhost:5432/quarkus
   http:
     port: 8080

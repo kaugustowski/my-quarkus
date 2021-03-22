@@ -34,7 +34,7 @@ public class StockController {
     @Consumes("application/json")
     @Produces("application/json")
     public Response createStock(StockForm form) {
-        return Response.created(URI.create(Routes.SINGLE_STOCK)).build();
+        return Response.created(URI.create("stocks")).build();
     }
 
 
